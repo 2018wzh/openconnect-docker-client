@@ -1,0 +1,7 @@
+POST https://vpn-ct.ecnu.edu.cn/
+Connected to 222.66.117.109:443
+SSL negotiation with vpn-ct.ecnu.edu.cn
+Connected to HTTPS on vpn-ct.ecnu.edu.cn with ciphersuite TLSv1.2-ECDHE-RSA-AES256-GCM-SHA384
+Got HTTP response: HTTP/1.1 404 Not Found
+Unexpected 404 result from server
+GET https://vpn-ct.ecnu.edu.cn/
