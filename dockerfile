@@ -3,7 +3,7 @@ FROM alpine
 
 # Copy the script to run OpenConnect and SSH
 COPY run.sh /run.sh
-
+COPY tinyproxy.conf /etc/tinyproxy/tinyproxy.conf
 # Update package list
 RUN apk update
 

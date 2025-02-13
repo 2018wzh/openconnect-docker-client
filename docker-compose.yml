@@ -1,9 +1,7 @@
 services:
   openconnect-proxy:
-    build: .
+    image: ghcr.io/2018wzh/openconnect-docker-client:main
     privileged: true  # Required for OpenConnect
-    volumes:
-      - ./tinyproxy.conf:/etc/tinyproxy/tinyproxy.conf:ro
     ports:
       - "8224:8224"
     environment:
