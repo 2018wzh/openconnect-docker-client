@@ -1,5 +1,5 @@
 # Use the official Alpine base image
-FROM alpine
+FROM alpine:edge
 
 # Copy the script to run OpenConnect and SSH
 COPY run.sh /run.sh
