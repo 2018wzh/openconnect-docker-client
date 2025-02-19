@@ -8,9 +8,10 @@ COPY tinyproxy.conf /etc/tinyproxy/tinyproxy.conf
 RUN apk update
 
 # Install OpenSSH, OpenSSL, and OpenConnect
-RUN apk add --no-cache openssh openssl openconnect tinyproxy ca-certificates
+RUN apk add --no-cache openssh openssl openconnect tinyproxy ca-certificates dante-server
 
 RUN mkdir /var/run/tinyproxy
+RUN mkdir /var/run/sockd
 
 # Make the script executable
 RUN chmod +x /run.sh

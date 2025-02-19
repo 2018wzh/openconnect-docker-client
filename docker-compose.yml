@@ -3,6 +3,7 @@ services:
     image: ghcr.io/2018wzh/openconnect-docker-client:main
     privileged: true  # Required for OpenConnect
     ports:
+      - "8222:8222"
       - "8224:8224"
     environment:
       VPN_SERVER: "VPN_SERVER_DNS_OR_IP"

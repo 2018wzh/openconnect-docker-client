@@ -16,6 +16,7 @@ echo "Starting OpenConnect..."
 echo "$VPN_PASSWORD" | openconnect --user="$VPN_USERNAME" --passwd-on-stdin "$VPN_SERVER" --useragent "AnyConnect-compatible OpenConnect GUI VPN Agent v9.12" >> "$OPENCONNECT_LOG" 2>&1 &
 sleep 1
 /usr/bin/tinyproxy >> "$TINYPROXY_LOG" >&2 &
+/usr/sbin/sockd -D >> "$SOCKD_LOG" >&2 &
 
 # Monitor the OpenConnect log for a BYE packet and exit the container when detected
 tail -f "$OPENCONNECT_LOG" | while IFS= read -r line; do
