@@ -4,6 +4,7 @@
 # Define log files
 OPENCONNECT_LOG="/var/log/openconnect.log"
 TINYPROXY_LOG="/var/log/tinyproxy.log"
+SOCKD_LOG="/var/log/sockd.log"
 
 # Check if necessary environment variables are set
 if [ -z "$VPN_SERVER" ] || [ -z "$VPN_USERNAME" ] || [ -z "$VPN_PASSWORD" ]; then
